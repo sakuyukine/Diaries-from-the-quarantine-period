@@ -1,0 +1,47 @@
+
+.text-effect{
+	animation: 4s animate infinite linear;
+	background-color:#494A5F;
+	padding:90px;
+}
+.text-effect .diary{
+	color: #fff;
+	font-family: '微软雅黑';
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 8px;
+	font-size: 85px;
+}
+.text-effect p{
+	letter-spacing: 3px;
+	font-size: 25px;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	}	
+@keyframes animate{
+	0%{ text-shadow: 0 0 0 white; }
+	40%{
+		color: rgba(255,255,255,0);
+		text-shadow: 0 0 30px white;
+	}
+	70%{
+		color: rgba(255,255,255,0.4);
+		text-shadow: 0 0 10px white;
+	}
+	90%{
+		color: rgba(255,255,255,0.6);
+		text-shadow: 0 0 30px white;
+	}
+	100%{ text-shadow: 0 0 40px rgba(255,255,255,0); }
+}
+@media only screen and (max-width: 990px){
+	.text-effect{ font-size: 80px; }
+}
+@media only screen and (max-width: 767px){
+	.text-effect{ font-size: 40px; }
+}
+@media only screen and (max-width: 479px){
+	.text-effect{ font-size: 30px; }
+}
+@media only screen and (max-width: 359px){
+	.text-effect{ font-size: 25px; }
+}

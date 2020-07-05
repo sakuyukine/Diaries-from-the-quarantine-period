@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>隔离日记</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/timeline.css">
+		<link rel="stylesheet" href="css/carousel.css">
+		<link rel="stylesheet" href="css/homePage.css">
+		<link rel="stylesheet" href="css/title.css">
+		<script src="js/echarts.min.js"></script>
+	</head>
+
+	<body>
+		<!-- ==== 这是开始 ==== -->
+		<header>
+			<!-- == 导航开始 == -->
+			<nav>
+				<ul>
+				  <li><a href="#T1"><i></i></a></li>
+				  <li><a href="#T2"><i></i></a></li>
+					<li><a href="#T3"><i></i></a></li>
+					<li><a href="#T4"><i></i></a></li>
+					<li><a href="#T5"><i></i></a></li>
+				</ul>
+			</nav>
+			<!-- == 导航结束 == -->
+		</header>
+		
+		<section id="T1">
+			<div class="backgroundMusic">
+				<audio src="music/《保重》.mp3" controls></audio>
+			</div>
+			<h1>这个世界还会好吗</h1>
+			<br>
+			<span class="enTitle">Will the world be any better</span>
+			<script src="js/homePage.js"></script>
+			<br><br>
+			<p>2019年12月<br><br>
+			中国武汉陆续出现新冠肺炎患者<br><br>
+			2020年1月开始新冠肺炎席卷全中国甚至全球...</p>
+			<br>
+		</section>
+		
+		<main>
+			<!-- == 主体开始 == -->
+			<section>
+				<!--这是第一个交互数据图-->
+				<br><br>
+				<h3><center>中国各省新冠累计确诊实时数据<br><br>
+					<span>&#40;截止更新至2020年7月5日&#41;</span>
+					</center></h3><!--截止更新至2020年7月5日提交作品当天-->
+				<br>
+				<div style="border: 2px solid ; width:70%; height:650px; display:block; margin:30px auto;" id="dataFirst"> </div>
+				<script type="text/javascript">
+					option = {
+					series: [{
+						type: 'treemap',
+						data: [{
+							name: '北京 928',
+							value: 928,
+						}, {
+							name: '香港 1258',            
+							value: 1258,
+							}, {
+							name: '上海 716',           
+							value: 716,
+							}, {
+							name: '甘肃 167',            
+							value: 167,
+							}, {
+							name: '四川 596',            
+							value: 596,
+							}, {
+							name: '河北 349',            
+							value: 349,
+							}, {
+							name: '陕西 320',            
+							value: 320,
+							}, {
+							name: '辽宁 156',            
+							value: 156,
+							}, {
+							name: '广东 1643',            
+							value: 1643,
+							}, {
+							name: '福建 363',            
+							value: 363,
+							}, {
+							name: '台湾 449',            
+							value: 449,
+							}, {
+							name: '重庆 582',            
+							value: 582,
+							}, {
+							name: '天津 199',            
+							value: 199,
+							}, {
+							name: '浙江 1269',            
+							value: 1269,
+							}, {
+							name: '江苏 654',            
+							value: 654,
+							}, {
+							name: '澳门 46',            
+							value: 46,
+							}, {
+							name: '广西 254',            
+							value: 254,
+							}, {
+							name: '新疆 76',            
+							value: 76,
+							}, {
+							name: '黑龙江 947',            
+							value: 947,
+							}, {
+							name: '安徽 991',            
+							value: 991,
+							}, {
+							name: '贵州 147',            
+							value: 147,
+							}, {
+							name: '青海 18',            
+							value: 18,
+							}, {
+							name: '西藏 1',            
+							value: 1,
+							}, {
+							name: '内蒙古 238',            
+							value: 238,
+							}, {
+							name: '云南 186',            
+							value: 186,
+							}, {
+							name: '宁夏 75',            
+							value: 75,
+							}, {
+							name: '湖南 1019',            
+							value: 1019,
+							}, {
+							name: '河南 1276',            
+							value: 1276,
+							}, {
+							name: '山西 198',           
+							value: 198,
+							}, {
+							name: '江西 932',            
+							value: 932,
+							}, {
+							name: '湖北 68135',            
+							value: 68135,
+							}, {
+							name: '海南 171',           
+							value: 171,
+							}, {
+							name: '山东 792',            
+							value: 792,
+							}, {
+							name: '吉林 155',            
+							value: 155,
+							}]
+						}]
+				};
+
+					var echartBar = echarts.init(document.getElementById("dataFirst"));
+					echartBar.setOption(option);
+				</script>
+				
+				<!--<p><br>2020年——<br>想要重启的一年</p>-->
+				
+				<br><br>
+				<p>此次席卷全球的新冠疫情影响着地球上每个人<br><br><br>
+				一位普通中国公民在此期间用日记纪录下了他们一家的隔离生活</p>
+				<br><br>
+				
+				<div class="text-effect">
+					<span class="diary"><center>隔离日记</center></span>
+					<p>Diaries from the quarantine period</p>
+				</div>
+		
+				<div class="scene">
+					<img src="img/scene1.png" alt="场景一" id="T2">
+				</div>
+				<!-- = 场景一 = -->
+				<img src="img/dialogue1.png " alt="对话左">
+				<!-- 对话一 -->
+				<p>疫情叠加春节，影响了人们的正常生活，互联网行业的时长格局因此较2019年发生了较大变化</p>
+				<!-- os -->
+				
+				<br>
+				<!--这是第二个交互数据图-->
+				<div style="width:80%; height:450px; display:block;margin: auto" id="dataSecond"> </div>
+				<script type="text/javascript">
+					option = {
+					title: {
+						text: '2020年春节移动互联网典型行业使用时长占比',
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+							type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+						}
+					},
+					legend: {
+						data: ['移动社交', '短视频', '手机游戏', '新闻资讯', '其他']
+					},
+					grid: {
+						left: '3%',
+						right: '4%',
+						bottom: '3%',
+						containLabel: true
+					},
+					xAxis: {
+						type: 'value'
+					},
+					yAxis: {
+						type: 'category',
+						data: ['2019春节', '2020平日', '2020春节']
+					},
+					series: [
+						{
+							name: '移动社交',
+							type: 'bar',
+							stack: '总量',
+							label: {
+								show: true,
+								position: 'insideRight'
+							},
+							data: [33.7, 32.3, 31.8]
+						},
+						{
+							name: '短视频',
+							type: 'bar',
+							stack: '总量',
+							label: {
+								show: true,
+								position: 'insideRight'
+							},
+							data: [11.8, 15.2, 17.3]
+						},
+						{
+							name: '手机游戏',
+							type: 'bar',
+							stack: '总量',
+							label: {
+								show: true,
+								position: 'insideRight'
+							},
+							data: [12.2, 8.5, 12.2]
+						},
+						{
+							name: '新闻资讯',
+							type: 'bar',
+							stack: '总量',
+							label: {
+								show: true,
+								position: 'insideRight'
+							},
+							data: [8.2, 7.9,9.0]
+						},
+						{
+							name: '其他',
+							type: 'bar',
+							stack: '总量',
+							label: {
+								show: true,
+								position: 'insideRight'
+							},
+							data: [34.1,36.1, 29.7]
+						}
+					]
+				};
+					var echartBar = echarts.init(document.getElementById("dataSecond"));
+					echartBar.setOption(option);
+				</script>
+
+				
+				<img src="img/dialogue2.png" alt="对话右">
+				<!-- 对话二 -->
+				<p>短视频因为此次疫情，展现出了非凡的活跃度，抖音与快手更是表现出分庭抗礼的架势</p>
+				<!-- os -->
+				<img src="img/graphs3.png" alt="静态图一">
+				<!-- 静态图一 -->
+				<img src="img/dialogue3.png" alt="对话左">
+				<!-- 对话三 -->
+				<p>在疫情中宅家的人们，将生活的趣味寄托于游戏上，众多游戏脱颖而出，吸引了更多国人的眼球</p>
+				<!-- os -->
+				<img src="img/graphs4.png" alt="静态图二">
+				<!-- 静态图二 -->
+				
+				
+				<div class="scene">
+					<img src="img/scene2.png" alt="场景二" id="T3">
+				</div>
+				<!-- = 场景二 = -->
+				<img src="img/dialogue4.png" alt="对话左">
+				<!-- 对话四 -->
+				<img src="img/dialogue5.png" alt="对话右">
+				<!-- 对话五 -->
+				<p>电影院因为疫情无法正常营业，视频软件成为人们的首选，满足人们对文化的需求，各大视频软件人均使用时长也因此增加</p>
+				<!-- os -->
+				
+				<br>
+				<!--这是第三个交互数据图-->
+				<div style="width:80%; height:450px; display:block;margin:20px auto;" id="dataThird"> </div>
+				<script type="text/javascript">
+					option = {
+					title: {
+						text: '2020年春节在线视频行业头部APP日人均使用时长',
+					},
+					tooltip: {
+						trigger: 'axis',
+						axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+							type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
+						}
+					},
+					grid: {
+						left: '3%',
+						right: '4%',
+						bottom: '3%',
+						containLabel: true
+					},
+					xAxis: [
+						{
+							type: 'category',
+							data: ['爱奇艺', '腾讯视频', '芒果TV', '哔哩哔哩'],
+							axisTick: {
+								alignWithLabel: true
+							}
+						}
+					],
+					yAxis: [
+						{
+							type: 'value'
+						}
+					],
+					series: [
+						{
+							name: '2019春节期间人均使用时长',
+							type: 'bar',
+							barWidth: '20%',
+							data: [59, 51, 50, 99]
+						},
+						{
+							name: '2020春节期间人均使用时长',
+							type: 'bar',
+							barWidth: '20%',
+							data: [74, 68, 88, 111]
+						}
+					]
+				};
+
+					var echartBar = echarts.init(document.getElementById("dataThird"));
+					echartBar.setOption(option);
+				</script>
+
+
+				<p>因为疫情宅在家无法相见的人们使用移动社交APP更加频繁，直接导致了在此期间社交移动APP日活跃用户规模增加</p>
+				<!-- os -->
+				
+				<br>
+				<!--这是第四个交互数据图-->
+				<div style="width:78%; height:450px; display:block;margin:30px auto 20px;" id="dataFourth"> </div>
+				<script type="text/javascript">
+					option = {
+					title: {
+						text: '2019与2020春节移动社交APP日活跃用户规模',
+					},
+					tooltip: {
+						trigger: 'axis'
+					},
+					legend: {
+						data: ['微信', 'QQ', '微博', '陌陌', '小红书']
+					},
+					toolbox: {
+						show: true,
+						feature: {
+							dataZoom: {
+								yAxisIndex: 'none'
+							},
+							dataView: {readOnly: false},
+							magicType: {type: ['line', 'bar']},
+							restore: {},
+							saveAsImage: {}
+						}
+					},
+					xAxis: {
+						type: 'category',
+						boundaryGap: false,
+						data: ['2019年春节期间', '2020年春节期间']
+					},
+					yAxis: {
+						type: 'value',
+						axisLabel: {
+							formatter: '{value} %'
+						}
+					},
+					series: [
+						{
+							name: '微信',
+							type: 'line',
+							data: [7.66, 7.68],
+							markPoint: {
+								data: [
+									{type: 'max', name: '最大值'},
+									{type: 'min', name: '最小值'}
+								]
+							},
+						},
+						{
+							name: 'QQ',
+							type: 'line',
+							data: [3.86, 3.81],
+							markPoint: {
+								data: [
+									{type: 'max', name: '最大值'},
+									{type: 'min', name: '最小值'}
+								]
+							},
+						},
+						{
+							name: '微博',
+							type: 'line',
+							data: [1.64, 2.12],
+							markPoint: {
+								data: [
+									{type: 'max', name: '最大值'},
+									{type: 'min', name: '最小值'}
+								]
+							},
+						},
+						{
+							name: '陌陌',
+							type: 'line',
+							data: [0.29, 0.30],
+							markPoint: {
+								data: [
+									{type: 'max', name: '最大值'},
+									{type: 'min', name: '最小值'}
+								]
+							},
+						},
+						{
+							name: '小红书',
+							type: 'line',
+							data: [0.16, 0.21],
+							markPoint: {
+								data: [
+									{type: 'max', name: '最大值'},
+									{type: 'min', name: '最小值'}
+								]
+							},
+							markLine: {
+								data: [
+									[{
+										symbol: 'none',
+										x: '90%',
+										yAxis: 'max'
+									}, {
+										symbol: 'circle',
+										label: {
+											position: 'start',
+											formatter: '最大值'
+										},
+										type: 'max',
+										name: '最高点'
+									}]
+								]
+							}
+						}
+					]
+				};
+
+					var echartBar = echarts.init(document.getElementById("dataFourth"));
+					echartBar.setOption(option);
+				</script>
+				<img src="img/dialogue6.png" alt="对话左">
+				<!-- 对话六 -->
+				<div class="scene">
+					<img src="img/scene3.png" alt="场景三" id="T4">
+				</div>
+				<!-- = 场景三 = -->
+				<img src="img/dialogue7.png" alt="对话左">
+				<!-- 对话七 -->
+				<p>下厨房APP被许多因疫情宅在家的人使用，在同类产品中取得较好口碑，活跃用户规模逐渐增多</p>
+				<!-- os -->
+				
+				<br>
+				<!--这是第五个交互数据图-->
+				<div style="width:78%; height:450px; display:block;margin:30px auto 20px;" id="dataFifth"> </div>
+				<script type="text/javascript">
+				option = {
+					title: {
+						text: '2020-01-24~2020-02-16【下厨房】APP下载量估算'
+					},
+					tooltip: {
+						trigger: 'axis'
+					},
+					legend: {
+						data: ['下载量']
+					},
+					toolbox: {
+						show: true,
+						feature: {
+							dataZoom: {
+								yAxisIndex: 'none'
+							},
+							dataView: {readOnly: false},
+							magicType: {type: ['line', 'bar']},
+							restore: {},
+							saveAsImage: {}
+						}
+					},
+					xAxis: {
+						type: 'category',
+						boundaryGap: false,
+						data: ['01月24日','01月25日','01月26日', '01月27日', '01月28日', '01月29日','01月30日','01月31日','02月01日','02月02日','02月03日','02月04日','02月05日','02月06日','02月07日','02月08日','02月09日','02月10日','02月11日','02月12日','02月13日','02月14日','02月15日','02月16日']
+					},
+					yAxis: {
+						type: 'value',
+						axisLabel: {
+							formatter: '{value} '
+						}
+					},
+					series: [
+						{
+							name: '下载量',
+							type: 'line',
+							data: [14724,12236,11387,12293,13362,14923,15171,19418,20044,24190,22576,25538,26505,27930,28513,27589,27455,27289,30630,32065,31926,33798,37855,39371],
+							markPoint: {
+								data: [
+									{type: 'max', name: '最大值'},
+									{type: 'min', name: '最小值'}
+								]
+							},
+							markLine: {
+								data: [
+									{type: 'average', name: '平均值'}
+								]
+							}
+						},
+					]
+				};
+
+					var echartBar = echarts.init(document.getElementById("dataFifth"));
+					echartBar.setOption(option);
+				</script>
+
+				<img src="img/dialogue8.png" alt="对话右">
+				<!-- 对话八 -->
+				<p>春节碰上疫情，餐饮企业响应国家号召，完全停止营业的企业出奇的多</p>
+				<!-- os -->
+				
+				<br>
+				<!--这是第六个交互数据图-->
+				<div style="width:80%; height:450px;display:block;margin: auto" id="dataSixth"> </div>
+				<script type="text/javascript">
+				option = {
+				//    backgroundColor: '#2c343c',
+
+					title: {
+						text: '2020年春节期间餐饮企业营业情况',
+						left: 'center',
+						top: 20,
+/*						textStyle: {
+						color: '#ccc'
+						}*/
+					},
+
+					tooltip: {
+						trigger: 'item',
+						formatter: '{a} <br/>{b} : {d}%'
+					},
+
+					visualMap: {
+						show: false,
+						min: 0,
+						max:250,
+						inRange: {
+						colorLightness: [0.2, 1]
+						}
+					},
+					series: [
+						{
+							name: '营业情况',
+							type: 'pie',
+							radius: '55%',
+							center: ['50%', '50%'],
+							data: [
+								{value: 2.6, name: '正常营业'},
+								{value: 4.6, name: '间断营业'},
+								{value: 13.5, name: '基本停止营业'},
+								{value: 79.3, name: '完全停止营业'}
+							].sort(function (a, b) { return a.value - b.value; }),
+							roseType: 'radius',
+							label: {
+								color: 'rgba(255, 255, 255, 0.5)'
+							},
+							labelLine: {
+								lineStyle: {
+									color: 'rgba(255, 255, 255, 0.5)'
+								},
+								smooth: 0.3,
+								length: 10,
+								length2: 20
+							},
+							itemStyle: {
+								color: '#c23531',
+								shadowBlur: 200,
+								shadowColor: 'rgba(0, 0, 0, 0.5)'
+							},
+
+							animationType: 'scale',
+							animationEasing: 'elasticOut',
+							animationDelay: function (idx) {
+								return Math.random() * 200;
+							}
+						}
+					]
+				};
+
+					var echartBar = echarts.init(document.getElementById("dataSixth"));
+					echartBar.setOption(option);
+				</script>
+			</section>
+	
+			<section id="T5">
+			<div class="scene">
+				<br>
+				<img src="img/scene4.png" alt="场景四">
+
+			</div>
+				<!-- = 场景四 = -->
+				<br>
+				<p>痛苦的日子终于算是过去，每个人又会投入到各自正常的生活中<br><br>然而我们不能忘记那些痛苦心酸但却温暖的瞬间，更不能忘记那些负重前行让我们重获幸福的人</p>
+			<!-- os -->
+			
+			<!-- 轮播部分 -->
+			<div class="slider">
+				<div class="slider-img">
+					<ul class="slider-img-ul">
+						<li><img src="img/0.jpg" alt="banner0"></li>							
+						<li><img src="img/1.jpg" alt="banner1"></li>
+						<li><img src="img/2.jpg" alt="banner2"></li>
+						<li><img src="img/3.jpg" alt="banner3"></li>
+						<li><img src="img/4.jpg" alt="banner4"></li>
+						<li><img src="img/0.jpg" alt="banner0"></li>							
+						<li><img src="img/1.jpg" alt="banner1"></li>
+					</ul>
+				</div>
+			</div>
+			<script src="js/jqueryBanner.js" type="text/javascript"></script>
+			<script type="text/javascript" src="js/carousel.js"></script>
+
+			<br>
+			<p>因疫情严重，各种疫情数据庞大冗杂，医院信息化建设随之加强，信息化工作者占比大</p>
+			<!-- 这是第七个交互数据图 -->
+			<div style="width:70%; height:450px;display:block;margin:30px auto;" id="dataSeventh"> </div>
+			<script type="text/javascript">
+				option = {
+				title: {
+					text: '2020年春节受访者在医院从事工作种类占比',
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: '{a} <br/>{b}: {d}%'
+				},
+				legend: {
+					orient: 'vertical',
+					left: 20,
+					top: 30,
+					data: ['医院管理者', '临床医护人员', '其他',  '医院信息化工作者']
+				},
+				series: [
+					{
+						name: '受访者从事工作',
+						type: 'pie',
+						radius: ['50%', '70%'],
+						avoidLabelOverlap: false,
+						label: {
+							show: false,
+							position: 'center'
+						},
+						emphasis: {
+							label: {
+								show: true,
+								fontSize: '30',
+								fontWeight: 'bold'
+							}
+						},
+						labelLine: {
+							show: false
+						},
+						data: [
+							{value: 7.3, name: '医院管理者'},
+							{value: 4.14, name: '临床医护人员'},
+							{value: 1.68, name: '其他'},
+							{value: 86.88, name: '医院信息化工作者'}
+						]
+					}
+				]
+			};
+
+				var echartBar = echarts.init(document.getElementById("dataSeventh"));
+				echartBar.setOption(option);
+			</script>
+
+			
+			<p>除了这次新冠疫情，历史上还发生过许多公共卫生事件，影响巨大，波及范围广</p>
+			<br>
+			<!-- 时间轴 -->
+			<div class="timeline" style="height:500px">
+				<header class="title">
+					<h2>历史公共卫生事件</h2>
+				</header>
+				<div class="about-history-list">		
+					<div class="flex-viewport" style="overflow: hidden; position: relative;">
+						<ul class="slides clearfix list" style="width: 2600%;">
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>2003</h3>
+									<div class="text">
+										<p><center><b>SARS事件</b></center></p> 
+										<p>
+										于2002年在中国广东发生，并扩散至东南亚至全球，直至2003年中期疫情才被逐渐消灭的一次全球性传染病疫潮。
+										</p>
+									</div>
+								</div>
+							</li>
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>2009</h3>
+									<div class="text">
+										<p><center><b>甲型H1N1流感</b></center></p> 
+										<p>
+										2009年甲型H1N1流感是一次由流感病毒新型变体所引发的全球性流行病疫情。
+										</p>
+									</div>
+								</div>
+							</li>
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>2014.02</h3>
+									<div class="text">
+										<p><center><b>西非埃博拉疫情</b></center></p> 
+										<p>埃博拉病毒是一种能引起人类和灵长类动物产生埃博拉出血热的烈性传染病病毒。</p>
+									</div>
+								</div>
+							</li>
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>2014.05</h3>
+									<div class="text">
+										<p><center><b>脊髓灰质炎疫情</b></center></p> 
+										<p>脊髓灰质炎有一个我们更为熟悉的名字——小儿麻痹症。当儿童感染野生脊髓灰质炎病毒时，病毒通过口腔进入人体并在肠胃内繁殖。</p>
+									</div>
+								</div>
+							</li>
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>2015</h3>
+									<div class="text">
+										<p><center><b>寨卡病毒疫情</b></center></p> 
+										<p>寨卡病毒是一种通过蚊虫进行传播的虫媒病毒，宿主不明确，主要在野生灵长类动物和栖息在树上的蚊子。</p>
+									</div>
+								</div>
+							</li>
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>2018</h3>
+									<div class="text">
+										<p><center><b>刚果埃博拉疫情</b></center></p> 
+										<p>是继2014年西非埃博拉病毒疫情之后，埃博拉病毒的二次大爆发。</p>
+									</div>
+								</div>
+							</li>
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>2019.12</h3>
+									<div class="text">
+										<p><center><b>新型冠状病毒肺炎疫情</b></center></p> 
+										<p>冠状病毒是一个大型病毒家族，已知可引起感冒及中东呼吸综合征和严重性呼吸综合征，新型冠状病毒时以前从未在人体中发现的冠状病毒新毒株。</p>
+									</div>
+								</div>
+							</li>
+							<li style="width: 253px; float: left; display: block;">
+								<div class="item">
+									<h3>Future</h3>
+									<div class="text">
+										<p><center><b>未来</b></center></p> 
+										<p>希望不会再有此类事件发生...</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<ul class="flex-direction-nav">
+						<li class="flex-nav-prev"><a class="flex-prev" href="#">&lt;</a></li>
+						<li class="flex-nav-next"><a class="flex-next" href="#">&gt;</a></li>
+					 </ul>
+				</div>
+				<script src="js/timeline.js"></script>
+				<script src="js/jqueryTimeline.js"></script>
+				<script>
+					$(function(){
+						if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))){
+							//phone
+						}else{
+							//PC
+							$(".about-history-list").flexslider({animation:"slide",slideshow:false,controlNav:false,itemWidth:253,itemMargin:31,prevText:"<",nextText:">",move:1});
+						}
+					});
+				</script>
+
+			</div>
+			
+			<br><br>
+			<!-- 最后呼吁 -->
+			<p>从2003年的非典到2020年的新型冠状病毒肺炎<br><br>
+			一次又一次的疫情在告诫我们人类<br><br>
+			要对自然怀有敬畏之心，尊重生命，敬畏自然</p><br>
+		</section>
+	</main>
+		<!-- == 主体结束 == -->
+		
+		<!-- == 页脚部分 == -->
+		<footer>
+			<p>联系我们</p>
+			<p>地址：四川省南充市师大路西华师范大学</p>
+			<p>单位：西华师范大学新闻传播学院</p>
+			<p>Email at us:1365098169@qq.com</p>
+			<br>
+			<p>关于我们</p>
+			<p>项目成员：陈雅淇 胡瑞岚 袁翠华</p>
+			<br>
+			<p>数据来源</p>
+			<p>TRUTH 中国移动互联网数据库 2020年2月</p>
+			<p>Analysys 易观·易观千帆</p>
+			<p>世界中餐联合会&amp;红餐网</p>
+			<p>七麦数据</p>
+			<p>199IT</p>
+			<br>
+			<p>&#9825;&nbsp;&nbsp;THANKS FOR YOUR READING&nbsp;&nbsp;&#9825;</p>
+			<br>
+			<hr>
+			<br>
+			<p>Copyright©2020 隔离日记. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;Collating data by 隔离日记</p>
+		</footer>
+		<!-- ==== 这是结束 ==== -->
+	</body>
+</html>
+

@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+/* ::: 总体 ::: */
+body{
+	width:100%;
+	margin:0 auto;
+	background-color:#494A5F;
+}
+main{
+	width: 100%;
+	background-color:#858FA3;
+	z-index: -2;
+}
+header+section{
+	width: 100%;
+	height:900px;
+}
+main+section{
+	width:100%;
+	height:auto;
+}
+
+/* ::: 标题 ::: */
+
+/* ::: 0s字体 ::: */
+main p{
+	text-align:center;
+	color:#FFFFFF;
+	font-family:wellfleet;
+	clear: both;
+	padding: 30px 0;
+	letter-spacing:3px;
+}
+section p{
+	text-align:center;
+	color:#FFFFFF;
+	font-family:wellfleet;
+	clear: both;
+	letter-spacing:3px;
+}
+span{
+	color:#B9B9B9;
+	font-family:wellfleet;
+	font-size:15px;
+	letter-spacing:3px;
+}
+section[id="T1"] p{
+	text-align:center;
+	color:#FFFFFF;
+	font-family:wellfleet;
+	clear:both;
+	padding-top:280px;
+	font-size:16px;
+	letter-spacing:3px;
+}
+section h3{
+	font-family:wellfleet;
+	letter-spacing:3px;
+}
+
+/* ::: 图片 ::: */
+img{
+	box-sizing: border-box;
+}
+img[alt*="场景"]{
+	width:1010px;
+	height:580px;
+	display: block;
+	margin: auto;
+}
+img[src^="img/dialogue"]{
+	padding:30px;
+}
+img[alt*="对话右"]{
+	float:right;
+	padding-right: 30px;
+}
+img[alt*="对话左"]{
+	position: relative;
+	left:30px;
+}
+img[alt*="静态图"]{
+	display:block;
+	margin:auto;
+	padding: 40px 0 60px;
+}
+.scene{
+	width: 100%;
+	height:600px;
+	background-color:#FFFFFF;
+}
+
+/* ::: 背景音乐 ::: */
+.backgroundMusic{
+	float:left;
+	position:fixed;
+}
+/* ::: 导航栏 ::: */
+nav{
+	position:fixed;
+	right:20px;
+	bottom:40%;
+}
+li{
+	list-style-type:none;
+	height:18px;
+}
+i{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background-color:#6A6A6A;
+	display:block;
+}
+
+/* ::: 页脚 ::: */
+footer{
+	background-color:#494A5F;
+	padding-top:40px;
+	padding-bottom:10px;
+}
+footer p{
+	clear: both;
+	text-align:center;
+	font-family:wellfleet;
+	padding:10px;
+	color:#FFFFFF;
+	letter-spacing:3px;
+	font-size:13px;
+}
